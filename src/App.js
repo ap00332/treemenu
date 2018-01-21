@@ -3,6 +3,7 @@ import './App.css';
 import  TreeComponent from './TreeComponent';
 import Loader from './Loader';
 import TextFieldComponent from './TextFieldComponent';
+import TypeAheadComponent from './TypeAheadComponent';
 
 class App extends Component {
   constructor(props){
@@ -15,6 +16,8 @@ class App extends Component {
       <div className="App">
          <TreeComponent name='Ameet' name2='Novice'/>
          <TxtFC/>
+         <TypeAheadComponent text='Hola'/>
+
       </div>
       
 
