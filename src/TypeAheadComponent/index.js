@@ -1,4 +1,6 @@
 import React from 'react';
+import {string} from 'prop-types';
+import connect from 'react-redux';
 
 const TypeAheadComponent = ({text}) => {
     
@@ -10,4 +12,14 @@ const TypeAheadComponent = ({text}) => {
     );
 }
 
-export default TypeAheadComponent;
+TypeAheadComponent.propTypes ={
+    text: string.isRequired,
+}
+
+TypeAheadComponent.defaultProps = {
+    text
+}
+
+export default connect(
+    state => ({text:state.text+'hello'}),
+)( TypeAheadComponent);
