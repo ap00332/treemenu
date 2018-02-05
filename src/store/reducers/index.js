@@ -4,7 +4,7 @@ const initialState = {
     name:'Ameet'
 }
 
-export default function sayMyApp(state= initialState, action){
+const sayMyApp = (state= initialState, action) =>{
     switch(action.type){
         case SAY_HELLO: 
         return {
@@ -16,3 +16,5 @@ export default function sayMyApp(state= initialState, action){
     }
     
 }
+
+export default sayMyApp;

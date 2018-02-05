@@ -6,10 +6,7 @@ import TextFieldComponent from './TextFieldComponent';
 import TypeAheadComponent from './TypeAheadComponent';
 
 class App extends Component {
-  constructor(props){
-    super(props);
-   
-  }
+ 
   render() {
     const TxtFC = Loader(TextFieldComponent);
     return (

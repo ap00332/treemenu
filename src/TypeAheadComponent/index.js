@@ -1,6 +1,7 @@
 import React from 'react';
 import {string} from 'prop-types';
-import connect from 'react-redux';
+import {connect} from 'react-redux';
+
 
 const TypeAheadComponent = ({text}) => {
     
@@ -17,9 +18,9 @@ TypeAheadComponent.propTypes ={
 }
 
 TypeAheadComponent.defaultProps = {
-    text
+    text: 'Hello'
 }
 
 export default connect(
-    state => ({text:state.text+'hello'}),
+    state => ({text:'hello'}),
 )( TypeAheadComponent);
